@@ -18,11 +18,11 @@ interface EditButtonProps {
 }
 
 const EditButton: React.FC<EditButtonProps> = ({ product }) => {
-     const dispatch = useDispatch();
+   //   const dispatch = useDispatch();
      
      const {push} = useRouter()
      const handleEdit = async () => {
-      dispatch(setData(product));
+      // dispatch(setData(product));
 		alert(product.id);
       push('/edit-product')
 	};
